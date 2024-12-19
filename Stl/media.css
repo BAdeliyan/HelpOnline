@@ -1,0 +1,16 @@
+.small-mobile {}
+
+.main-desktop {
+   
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .small-mobile {
+        display: none;
+    }
+
+    .main-desktop {
+        display: block;
+    }
+}

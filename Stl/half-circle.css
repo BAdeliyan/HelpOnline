@@ -1,0 +1,42 @@
+ section {
+   position: relative;
+   width: 92%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 50px;
+   overflow: hidden;
+ }
+
+
+ section .content {
+   z-index: 1;
+   max-width: 100%;
+   text-align: center;
+ }
+
+
+ section .content h2 {
+   font-size: 3em;
+   color: #fff;
+ }
+
+ section .content p {
+   color: #fff;
+   font-size: 1.2em;
+ }
+
+ section::before {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   width: 100vh;
+   height: 100vh;
+   left: 50%;
+   border-radius: 50%;
+   background: linear-gradient(to top, #204284, #ffffff);
+   /* background:#204284; */
+   transform-origin: bottom;
+   transform: translateX(-50%) scale(4);
+ }

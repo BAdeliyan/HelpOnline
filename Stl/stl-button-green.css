@@ -1,0 +1,19 @@
+.button-download {
+    background-color:#204284;
+    border: none;
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 35px;
+    font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button-download:hover {
+
+    background: #f6921e;
+    color: black;
+    box-shadow: 0 3px 3px rgba(44, 49, 126,0.5)
+}

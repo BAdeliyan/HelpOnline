@@ -1,0 +1,111 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} */
+/* 
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background: #bedfe8;
+} */
+
+.countainer {
+ 
+}
+
+.countainer .box {
+  position: relative;
+  padding: 10px 20px;
+  scrollbar-color: #204284 rgb(207, 207, 207);
+  direction: ltr;
+}
+
+.countainer .box .header {
+  position: relative;
+  background: #204284;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  border-radius: 15px;
+  height: 60px;
+  padding-top: 15px;
+  box-shadow: 0 3px 3px rgba(87, 87, 110, 0.5)
+}
+
+.countainer .box .header::before {
+  content: "+";
+  position: absolute;
+  right: 20px;
+  font-size: 1.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgb(250, 255, 177);
+  font-weight: bold;
+
+}
+
+
+.countainer .box .header:hover {
+  background-color: chocolate;
+  box-shadow: 0 3px 3px rgba(255, 141, 66, 0.3)
+}
+
+.countainer .box .body {
+  position: relative;
+  background: white;
+  height: 0;
+  overflow: hidden;
+  overflow-y: auto;
+  transition: 0.5s;
+
+
+
+  color: rgb(10, 9, 8);
+
+  text-align: right;
+
+
+  font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+  text-indent: 20px;
+  font-size: 20px;
+
+  background: linear-gradient(to top, #ffffff, #eeebff);
+
+
+}
+
+.countainer .box.active .body {
+  height: 150px;
+  padding: 10px;
+
+
+
+  color: rgb(10, 9, 8);
+
+  text-align: right;
+
+  margin: 20px;
+  font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 40px;
+  text-indent:20px;
+  font-size: 20px;
+
+
+
+}
+
+.countainer .box.active .header::before {
+  content: "-";
+  color: rgb(250, 255, 177);
+}
+
+.text-quiz {
+  margin-right: 40px;
+  font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}

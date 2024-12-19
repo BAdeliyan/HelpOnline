@@ -1,0 +1,37 @@
+
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:linear-gradient(to right, rgb(227, 42, 227) #654);
+}
+
+.countainer-textCircle{
+    background:rgb(244, 242, 255);
+   
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 50px rgba(1, 11, 99, 0.4);
+}
+
+
+.textCircle {
+  background: url(../Pics/manage.png);
+  background-size: cover;
+  float: left;
+  margin: 50px 30px 30px 0px;
+  width: 300px;
+  height: 300px;
+  shape-outside: circle();
+}
+
+.p {
+  text-align: justify;
+  line-height: 20px;
+}
+
+.h1{
+    margin: 0 0 20px;
+    font-size: 22px;
+}
