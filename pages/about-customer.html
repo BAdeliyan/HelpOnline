@@ -1,0 +1,612 @@
+<html lang="fa-ir">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>راهنمای کاربری سامانه پیچک</title>
+    <link rel="stylesheet" type="text/css" href="../Stl/Stl.css" />
+    <link rel="stylesheet" type="text/css" href="../Stl/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../stl/stl-button-green.css" />
+    <link rel="stylesheet" type="text/css" href="../Stl/water.css" />
+    <link rel="stylesheet" type="text/css" href="../Stl/GalleryPics.css" />
+    <link rel="stylesheet" type="text/css" href="../stl/playCard.css" />
+    <link rel="stylesheet" type="text/css" href="../Stl/Text-Circle.css" />
+    <link rel="stylesheet" type="text/css" href="../Stl/half-circle.css" />
+    <link rel="stylesheet" href="../Stl/menu-top.css">
+    <link rel="shortcut icon" href="../Pics/favIcon.png" type="image/x-icon"/>
+    <style>
+        .section-back-squre {
+            position: relative;
+            height: 140vh;
+            overflow: hidden;
+            display: flex;
+            background-color: #111;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .section-back-squre .i-sec-squre {
+            position: relative;
+            width: 60px;
+            height: 60px;
+            background-color: #222;
+            gap: 10px;
+        }
+
+        .section-back-squre .i-sec-squre:nth-child(5n+1) {
+            animation: animate 2s linear infinite, animateBg 5s linear infinite;
+            animation-delay: calc(-1s * var(--i));
+        }
+
+        .section-back-squre .i-sec-squre:nth-child(5n+2) {
+            animation: animate 3s linear infinite,
+                animateBg 5s linear infinite;
+            animation-delay: calc(-1.5s * var(--i));
+        }
+
+        .section-back-squre .i-sec-squre:nth-child(5n+3) {
+            animation: animate 4s linear infinite,
+                animateBg 5s linear infinite;
+            animation-delay: calc(-2s * var(--i));
+        }
+
+        .section-back-squre .i-sec-squre:nth-child(5n+4) {
+            animation: animate 5s linear infinite,
+                animateBg 5s linear infinite;
+            animation-delay: calc(-3s * var(--i));
+        }
+
+        .section-back-squre .i-sec-squre:nth-child(5n+5) {
+            animation: animate 6s linear infinite,
+                animateBg 5s linear infinite;
+            animation-delay: calc(-3.5s * var(--i));
+        }
+
+
+
+        @keyframes animate {
+
+            0%,
+            20%,
+            80%,
+            100% {
+                background: #222;
+            }
+
+            60% {
+                background: #0f0;
+            }
+        }
+
+        @keyframes animateBg {
+            0% {
+                filter: hue-rotate(0deg);
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+
+
+<body style="background-color: rgb(244, 242, 255);">
+
+
+    <ul class="ul-menu-top" style="background-color: rgb(244, 242, 255);">
+        <div class="container-fluid" style="direction: rtl;padding-left: 0px;padding-right: 0px;margin-bottom: 1px;">
+            <div class="row">
+
+
+                <div class="col-md-2 col-12 col-sm-4" style="text-align: center;">
+                    <li
+                        style="margin-bottom: 2px; width: 100%;margin-top: 10px;margin-bottom: 10px;text-align: center;">
+                        <a href="../Index.html">
+                            <img src="../Pics/logo-home.png" class="logo-pic" />
+                        </a>
+                    </li>
+                </div>
+
+
+
+                <div class="col-md-2 col-12 col-sm-4" style="text-align: center;padding-left:2px;padding-right: 2px">
+                    <li class="li-menu-top dropdown box-menu"
+                        style="margin-bottom: 2px;width: 100%;text-align: center; z-index: 15;">
+                        <a href="../pages/help/help.html" style=" text-decoration: none;">راهنمای کاربری</a>
+                        <div class="dropdown-content" style="margin-bottom: 1px;">
+                            <a href="../pages/help/Doc/sec1/sec1.html" style=" text-decoration: none;">مستند
+                                راهنمای کاربری سامانه پیچک </a>
+                            <div class="dropdown-content" style="margin-bottom: 1px;">
+                                <a href="../pages/help/Video/video.html" style=" text-decoration: none;">
+                                    فیلم‌های آموزشی سامانه </a>
+                                <div class="dropdown-content" ;style="margin-bottom: 1px;">
+                                    <a href="#" style=" text-decoration: none;"> شبیه‌سازی سامانه</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="col-md-2 col-6 col-sm-4" style="padding: 0px;padding-left:2px;padding-right: 2px">
+                    <li class="li-menu-top  box-menu" style="margin-bottom: 2px;width: 100%;">
+                        <a href="../pages/shenasnameh.html" style=" text-decoration: none;">جزئیات سند</a>
+                    </li>
+                </div>
+
+
+
+                <div class="col-md-2 col-6 col-sm-4" style="padding-left:2px;padding-right: 2px">
+                    <li class="li-menu-top box-menu" style="margin-bottom: 2px;width: 100%;">
+                        <a href="../pages/FAQ.html" style=" text-decoration: none;">سؤالات متداول</a>
+                    </li>
+                </div>
+
+
+                <div class="col-md-2 col-6 col-sm-4" style="padding-left:2px;padding-right: 2px">
+                    <li class="li-menu-top dropdown box-menu" style="margin-bottom: 2px;width: 100%; z-index: 10;">
+                        <a href="../pages/about-main.html" style=" text-decoration: none;">درباره ما</a>
+                        <div class="dropdown-content" style="margin-bottom: 1px;">
+                            <a href="../pages/about.html" style=" text-decoration: none;"> درباره شرکت
+                                توسن</a>
+                            <div class="dropdown-content" style="margin-bottom: 1px;">
+                                <a href="../pages/about-manage.html" style=" text-decoration: none;">سخن
+                                    مدیرعامل شرکت </a>
+                                <div class="dropdown-content">
+                                    <a href="../pages/about-customer.html" style=" text-decoration: none;">مشتری‌های
+                                        توسن</a>
+                                    <div class="dropdown-content">
+                                        <a href="../pages/about-personel.html" style=" text-decoration: none;"> معرفی
+                                            کارکنان توسن</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+
+
+                <div class="col-md-2 col-6 col-sm-4" style="padding-left:2px;padding-right: 2px">
+                    <li class="li-menu-top box-menu" style="margin-bottom: 2px;width: 100%;">
+                        <a href="../pages/nazar.html" style=" text-decoration: none;">نظرسنجی</a>
+                    </li>
+                </div>
+
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div style="direction: rtl;">
+                    <section class="col-md-12 col-12 col-sm-12"
+                        style="margin-left:auto;margin-right:auto;margin: 0px;padding: 0px;">
+                        <div class="content">
+                            <h2 style=" font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;">شرکت
+                                توسن، سامانه های نرم افزارهای نگین</h2>
+                            <p style=" font-family: yekan bakh, b yekan, Verdana, Geneva, Tahoma, sans-serif;">
+                                در «سامانه پیچک » عملیات رایج مربوط به چک¬های کاغذی انجام می‌شود. عملیاتی ازجمله؛ ثبت،
+                                انتقال، واگذاری، مسدودی،
+                                ابطال، نقد کردن و برگشت زدن چک قابل انجام است.
+                                «سامانه چکاد » مربوط به چک¬های دیجیتال است. در این سامانه، فرآیندهای مربوط به چک دیجیتال
+                                (چک
+                                غیر کاغذی) وجود دارد
+                                و از این جهت با سامانه پیچک متفاوت است. در چک¬های دیجیتال همانند چک¬های کاغذی؛ اطلاعات
+                                مربوط
+                                به صاحب چک، ذینفع چک،
+                                تاریخ سر رسید، مبلغ سر رسید و غیره وارد و ثبت می‌شود، سپس تائید چک انجام می‌شود. لازم به
+                                ذکر
+                            </p>
+                        </div>
+                    </section>
+                </div>
+
+
+            </div>
+        </div>
+
+    </ul>
+
+
+    <div style="position: absolute;">
+
+        <p class="text-p">
+            توسن در طی بیش از دو دهه فعالیت خود به عنوان شرکت پیشرو در ارایه راهکارهای بانکی و پرداخت کشور، افتخار ارایه
+            اولین در صنعت بانکی و مالی کشور را در کارنامه دارد.
+        </p>
+
+        <p class="text-p">
+            ما توسن را با هدف ایجاد یک بستر مستقل و بومی برای ارائه راهکارهای نوین فناوری اطلاعات در زمینه‌هایی مثل
+            بانکداری
+            و دولت الکترونیک تاسیس کرده‌ایم. ما باور داریم که وجود چنین بستری به سرعت گرفتن چرخش مالی و در نتیجه رونق
+            اقتصادی کشور کمک می‌کند که نتیجه تمام این‌ها، هدف نهایی ما، یعنی بهبود سطح رفاه مردم کشورمان خواهد بود.
+        </p>
+
+        <p style="text-align: center;">
+            <img src="../Pics/pics-FlipCardReturn/personal06.png" alt=""
+                style="border-radius: 10px;width: 200px;height: 200px;border-radius: 30px;">
+                <img src="../Pics/pics-FlipCardReturn/personal06.png" alt=""
+                style="border-radius: 10px;width: 200px;height: 200px;border-radius: 30px;">
+        </p>
+       
+
+    </div>
+
+
+
+
+
+    <div class="section-back-squre"
+        style="filter: grayscale(1) brightness(2) opacity(0.03);background:none;z-index: -5; position: relative;">
+
+
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:15"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:19"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:10"></i>
+        <i class="i-sec-squre" style="--i:18"></i>
+        <i class="i-sec-squre" style="--i:16"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:11"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:12"></i>
+        <i class="i-sec-squre" style="--i:13"></i>
+        <i class="i-sec-squre" style="--i:17"></i>
+    </div>
+
+
+    <br>
+
+
+
+    <div class="container-fluid" style="background-color: #204284;">
+        <div class="row">
+            <div class="col-md-6">
+
+
+                <div style="direction: ltr;">
+                    <p class="text-footer" style="margin-top: 15px;"> &nbsp;
+                        &nbsp; <a href="https://t.me/tosansolutions" style="cursor: pointer;"><img
+                                src="../Pics/telegram.png" class="icon4-footer"></a>
+                        &nbsp; <a href="https://www.instagram.com/tosansolutions" style="cursor: pointer;"><img
+                                src="../Pics/instagram.png" class="icon4-footer"></a>
+                        &nbsp; <a href="https://www.linkedin.com/company/tosansolutions/" style="cursor: pointer;"><img
+                                src="../Pics/linkdin.png" class="icon4-footer"></a>
+                        &ensp;
+                        ما را در شبکه‌های اجتماعی دنبال کنید</p>
+
+
+
+                        <p style="text-align: center;">
+                            <a href="https://www.tosan.com/survey/general-form/" style="text-decoration: none;">
+                                <img src="../Pics/barcode.svg" style="width: 90px;height: 90px;margin: 10px;" />
+                                <br />
+                                <p style="text-align: center;direction: rtl;" class="title-underlined">
+                                <span style="font-size: 14.5px;
+                         color: white;
+                         font-family:yekan bakh,b yekan, Verdana, Geneva, Tahoma, sans-serif;">
+                                    در نظرسنجی مستندات راهنمای کاربری شرکت کنید و ما را در بهبود کیفیت مستندات شرکت توسن
+                                    یاری بخشید.
+                                </span>
+                            </p>
+                            </a>
+                        </p>
+                    </div>
+                </div>
+
+
+
+            <div class="col-md-6">
+
+                <footer style="direction: rtl" ;>
+                    <p class="text-footer">
+                        <span class="bullet-footer">•&nbsp;</span>
+                        <span class="text-title-footer"> تلفن :</span>
+                        <span> &nbsp;82198000- </span>
+                        <span>021</span>
+                    </p>
+                    <p class="text-footer">
+                        <span class="bullet-footer">•&nbsp;</span>
+                        <span class="text-title-footer"> وب سایت:</span>
+                        &nbsp; <a href="https://tosan.com" target="_blank" class="a-menutop-footer">www.tosan.com
+                        </a>
+                    </p>
+                    <p class="text-footer">
+                        <span class="bullet-footer">•&nbsp;</span>
+                        <span class="text-title-footer"> ایمیل :</span>
+                        <span> &nbsp; <a href="mailto:Info@Tosan.com" class="a-menutop-footer"> info@tosan.com
+                            </a></span>
+                    </p>
+                    <p class="text-footer">
+                        <span class="bullet-footer">•&nbsp;</span>
+                        <span class="text-title-footer"> ساختمان متمرکز توسن:</span>
+                        &nbsp; تهران، خیابان گاندی، بن بست پالیزوانی (هفتم)، پلاک 14
+                    </p>
+                    <br />
+                </footer>
+
+            </div>
+
+            <br /> <br /> <br />
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row">
+
+
+
+        <div class="listpic-footer" style=" scrollbar-color:#919191 rgb(207, 207, 207)">
+
+
+            <div class="itempic-footer" style="margin-left: 20px;">
+                <img src="../Pics/Footer-pics/01.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت اول نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/02.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت دوم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/03.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت سوم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/04.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت چهارم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/05.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت پنجم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/06.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت ششم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/07.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت هفتم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/08.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت هشتم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/09.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت نهم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/10.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت دهم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/11.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت یازدهم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/12.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">شرکت دوازدهم نمونه</div>
+            </div>
+
+            <div class="itempic-footer">
+                <img src="../Pics/Footer-pics/13.png" alt="" class="itemImage-footer">
+                <div class="itemTitle-footer">سال تاسیس توسن</div>
+            </div>
+
+
+        </div>
+
+
+        <div style="height: 20px; background-color: #f6921e;"></div>
+        <div style="height: 40px; background-color: #204284;"></div>
+
+    </div>
+    </div>
+
+
+
+
+</body>
+
+</html>
